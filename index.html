@@ -14,22 +14,24 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet"> 
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
+    <link href="css/resume.css" rel="stylesheet">
 
   </head>
 
+  <!--Nav Bar-->
   <body id="page-top">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Clarence Taylor</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        <span class="d-block d-lg-none">Danielle Reed</span>
+        <span class="d-none d-lg-block">  
+         <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/daniellereed2.png">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,6 +42,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
+           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
           </li>
@@ -47,140 +52,282 @@
             <a class="nav-link js-scroll-trigger" href="#education">Education</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            <a class="nav-link js-scroll-trigger" href="#skills-image">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+            <a class="nav-link js-scroll-trigger" href="#notebook">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
 
+    <!--Intro Page-->
     <div class="container-fluid p-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-          <h1 class="mb-0">Clarence
-            <span class="text-primary">Taylor</span>
-          </h1>
-          <div class="subheading mb-5">3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-            <a href="mailto:name@email.com">name@email.com</a>
-          </div>
-          <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-          <div class="social-icons">
-            <a href="#">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </div>
-        </div>
+      <section class= "deskimage">
+        <img class = "img-responsive" img src = "img/deskedit.png" height="900" width:"800" >
+        <div class="text-box name-box">
+            <h1 class="mb-0">Hi, I'm Danielle.
+              <span class="text-primary"></span>
+            </h1>
+            <div class="subheading mb-5">
+            </div>
+            <p class="lead mb-5"> </p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/daniellereed/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/daniellebeers">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://twitter.com/daniellemadeit">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/xdaniellacatx/">
+                <i class="fab fa-instagram"></i>
+              </a>
+              </div>
+            </div>
       </section>
 
-      <hr class="m-0">
+      <!--About Me-->
+  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="about">
+      <div class="container-fluid p-0">
+        <section class= "aboutme">
+          <img class = "img-responsive" img src = "img/aboutme.PNG" height="1027" width:"800">
+          <div class="text-box name-box">
+              <h2 class="mb-0">I'm a Full Stack Developer.
+               
+                <span class="text-primary"></span>
+              </h2>
+              <div class="subheading mb-5">
+              </div>
+              <p class="lead mb-5"> </p>
+              
+              </div>
+        </section>
+      </section>
+  
+        <!--Portfolio-->
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="portfolio">
+        <div class="container">
+          <div class="box" v-for="imgurl in imgs">
+            <div class="imgBox">
+              <img src="img/yarnover.jpg"height="375" width:"450">
+            </div>
+            <div class="content">
+              <h2>Yarn Over</h2>
+              <p>A WebMVC app for tracking yarn, hooks and projects</p>
+            </div>
+          </div>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
+              <div class="box" v-for="imgurl in imgs">
+                <div class="imgBox">
+                  <img src="img/c.PNG" height="375">
+                </div>
+                <div class="content">
+                  <h2><a href="https://github.com/daniellebeers/GoldBadgeChallenges">.NET </h2>
+                  <p>Tracking my progress learning C#</p>
+                </div>
+              </div>
+      
+
+            <div class="box" v-for="imgurl in imgs">
+                <div class="imgBox">
+                  <img src="img/creature.png" height= "370">
+                </div>
+                <div class="content">
+                  <h2><a href="https://codepen.io/drreed/pen/LBNQZq">Creature</h2></a>
+                  <p>Created using only CSS</p>
+                </div>
+              </div>
+
+            <div class="box" v-for="imgurl in imgs">
+                <div class="imgBox">
+                  <img src="img/cutedogstore.PNG" height="370">
+                </div>
+                <div class="content">
+                  <h2><a href="https://github.com/daniellebeers/StoreAppProject">Cute Dog Ice Cream</h2></a>
+                  <p></p>
+                </div>
+              </div>
+
+
+              <div class="box" v-for="imgurl in imgs">
+                <div class="imgBox">
+                  <img src="img/cutedoglogos.PNG" height= "370">
+                </div>
+                <div class="content">
+                  <h2>Cute Dog Ice Cream</h2>
+                  <p></p>
+                </div>
+              </div>
+
+              <div class="box" v-for="imgurl in imgs">
+                <div class="imgBox">
+                  <img src="img/tobias.PNG" height= "370">
+                </div>
+                <div class="content">
+                  <h2>Cute Dog Ice Cream</h2>
+                  <p></p>
+                </div>
+              </div>
+
+              <div class="box" v-for="imgurl in imgs">
+                <div class="imgBox">
+                  <img src="img/concept1.PNG" height= "370">
+                </div>
+                <div class="content">
+                  <h2>Tlaolli Branding Concept</h2>
+                  <p></p>
+                </div>
+              </div>
+
+              <div class="box" v-for="imgurl in imgs">
+                <div class="imgBox">
+                  <img src="img/concept3.PNG" height= "370">
+                </div>
+                <div class="content">
+                  <h2>Tlaolli Branding Concept</h2>
+                  <p></p>
+                </div>
+              </div>
+
+              <div class="box" v-for="imgurl in imgs">
+                <div class="imgBox">
+                  <img src="img/concept2.PNG" height= "370">
+                </div>
+                <div class="content">
+                  <h2>Tlaolli Branding Concept</h2>
+                  <p></p>
+                </div>
+              </div>
+
+
+
+                            <div class="box" v-for="imgurl in imgs">
+                                <div class="imgBox">
+                                  <img src="img/.jpg"height="375" width:"400">
+                                </div>
+                                <div class="content">
+                                  <h2>Yarn Over</h2>
+                                  <p>A WebMVC app for tracking yarn, hooks and projects</p>
+                                </div>
+                              </div>
+                              <div class="box" v-for="imgurl in imgs">
+                                  <div class="imgBox">
+                                    <img src="img/.jpg"height="375" width:"400">
+                                  </div>
+                                  <div class="content">
+                                    <h2>Yarn Over</h2>
+                                    <p>A WebMVC app for tracking yarn, hooks and projects</p>
+                                  </div>
+                                </div>
+                                <div class="box" v-for="imgurl in imgs">
+                                    <div class="imgBox">
+                                      <img src="img/.jpg"height="375" width:"400">
+                                    </div>
+                                    <div class="content">
+                                      <h2>Yarn Over</h2>
+                                      <p>A WebMVC app for tracking yarn, hooks and projects</p>
+                                    </div>
+                                  </div>                
+                </div>
+        </div>
+
+      
+        <!--Experience-->
+        <section class= "experience">
+          <section class= "experience-image">
+          <section class="" id="experience">
+              <img class = "img-responsive" img src = "img/experience.jpg" height="950" width:"820">
+            </section>
+              <div class="experience-text">
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Senior Web Developer</h3>
-              <div class="subheading mb-3">Intelitec Solutions</div>
-              <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+              <h3 class="mb-0">Full Time .NET Student</h3>
+              <div class="subheading mb-3">Eleven Fifty Academy</div>
+              <p>600+ Hours of hands on training and educational experience in C#, Wordpress, PHP, JavaScript, HTML and CSS. 
+                <br>Completed group projects, individual portfolio, etc</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">March 2013 - Present</span>
+              <span class="text-primary"></span>
             </div>
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Web Developer</h3>
-              <div class="subheading mb-3">Intelitec Solutions</div>
-              <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+              <h3 class="mb-0">Pre-Planning Advisor</h3>
+              <div class="subheading mb-3">Crown Hill Funeral Home and Cemetery</div>
+              <p>Advise families with pre-planning cemetery and funeral arrangements for their loved ones. <br>Top performer in a national company, with three months grossing over $100,000.</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">December 2011 - March 2013</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Junior Web Designer</h3>
-              <div class="subheading mb-3">Shout! Media Productions</div>
-              <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2010 - December 2011</span>
+              <span class="text-primary"></span>
             </div>
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Web Design Intern</h3>
-              <div class="subheading mb-3">Shout! Media Productions</div>
-              <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+              <h3 class="mb-0">Sales Development Representative</h3>
+              <div class="subheading mb-3">Angie's List</div>
+              <p>Member Sales Representative - accept incoming calls from potential members, converting them to a paid membership,<br> up-selling as the opportunity was available. Based on performance was promoted to Advertising Sales after 7 months.
+
+                  <br>Discovery Representative - reach out to businesses that had been previous advertisers. Re-engaged and re-qualify<br> to create new programs for previous advertisers. Consistently ranked in the top 10% of my 20 person team, and department.
+                  
+                  <br>Eligibility Representative - cold called new businesses and assist them with becoming eligible to advertise with Angie's List.<br> Tailor the product to meet the needs of the business, and provide a memorable customer service experience.<br> Consistently in the top 20% of a twenty person team and a 100 person department.</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">September 2008 - June 2010</span>
+              <span class="text-primary"></span>
             </div>
           </div>
 
         </div>
-
+        </section>
       </section>
 
-      <hr class="m-0">
+    
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
-
+      <!--Education-->
+      <section class= "education">
+      <section class="" id="education">
+          <img class = "img-responsive" img src = "img/education.jpg" height="1000" width:"700">
+        <div class="education-text">
+          <h2 class="mb-5"></h2>
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">University of Colorado Boulder</h3>
-              <div class="subheading mb-3">Bachelor of Science</div>
-              <div>Computer Science - Web Development Track</div>
-              <p>GPA: 3.23</p>
+              <h3 class="mb-0">Eleven Fifty Academy</h3>
+              <div class="subheading mb-3">.NET Development</div>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">August 2006 - May 2010</span>
+            <div class="resume-date text-md-left">
+              <span class="text-primary"></span>
             </div>
           </div>
-
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">James Buchanan High School</h3>
-              <div class="subheading mb-3">Technology Magnet Program</div>
-              <p>GPA: 3.56</p>
+              <h3 class="mb-0">Ball State University</h3>
+              <div class="subheading mb-3">Bachelor of Sciences - Apparel Design</div>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">August 2002 - May 2006</span>
+            <div class="resume-date text-md-left">
+              <span class="text-primary"></span>
             </div>
           </div>
-
         </div>
       </section>
+    </section>
 
-      <hr class="m-0">
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+    
+
+      <!--Skills-->
+      <section class="skills" id="skills">
+          <img class = "img-responsive" id = "skills-image" src = "img/skills.jpg" height="1000" width:"1000">
+        <div class="skills-text">
         <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
+          <h2 class="mb-5"></h2>
 
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <div class="subheading mb-3"> </div>
           <ul class="list-inline dev-icons">
+            
             <li class="list-inline-item">
               <i class="fab fa-html5"></i>
             </li>
@@ -188,22 +335,7 @@
               <i class="fab fa-css3-alt"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-js-square"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-angular"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-react"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-node-js"></i>
-            </li>
-            <li class="list-inline-item">
               <i class="fab fa-sass"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-less"></i>
             </li>
             <li class="list-inline-item">
               <i class="fab fa-wordpress"></i>
@@ -212,78 +344,60 @@
               <i class="fab fa-gulp"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-grunt"></i>
+                <i class="fab fa-js-square"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-npm"></i>
+                <i class="fab fa-slack"></i>
             </li>
+            <br>
+              <li class="list-inline-item"= id="huffle">
+                  <img src="img/hufflepuff.png" height: "200" width: "200"></i>
+              </li>
+              <li class="list-inline-item" id="infj">
+                  <img src="img/infjpersonality.png"></i>
+              </li>
+            </ul>
           </ul>
 
-          <div class="subheading mb-3">Workflow</div>
+          <div class="subheading mb-3"></div>
           <ul class="fa-ul mb-0">
             <li>
-              <i class="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design</li>
+           <!--   <i class="fa-li fa fa-check"></i>
+              </li>
             <li>
               <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
+               </li>
             <li>
               <i class="fa-li fa fa-check"></i>
-              Cross Functional Teams</li>
+              </li>
             <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
+              <i class="fa-li fa fa-check"></i>-->
+               </li>
           </ul>
         </div>
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
         </div>
       </section>
 
-      <hr class="m-0">
+      
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5">Awards &amp; Certifications</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Google Analytics Certified Developer</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Mobile Web Specialist - Google Certification</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              2<sup>nd</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - James Buchanan High School - Hackathon 2006</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              3<sup>rd</sup>
-              Place - James Buchanan High School - Hackathon 2005</li>
-          </ul>
-        </div>
-      </section>
+    <!--ContactForm-->
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contact">
+         
+          <img id = "notebook" img class = "img-responsive" img src = "img/contact.jpg" height="1000" width:"1600">
+         <div class= "contactext">   
+          <header>CONTACT ME</header>
 
+    <form id="form" class="topBefore">
+        
+          <input id="name" type="text" placeholder="NAME">
+          <input id="email" type="text" placeholder="E-MAIL">
+          <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+      <input id="submit" type="submit" value="SEND">      
+    </form>
+ 
     </div>
+  </section>
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
