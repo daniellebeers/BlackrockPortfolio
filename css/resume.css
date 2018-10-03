@@ -206,8 +206,8 @@ section.resume-section .resume-item .resume-date {
 /* About */
 .aboutme{
   position: relative;
-  bottom: 8em;
-  right: 3em;
+  bottom: 15em;
+ right: 5em;
 }
 
 .text-box{
@@ -226,12 +226,12 @@ section.resume-section .resume-item .resume-date {
 /*Portfolio*/
 .container {
   position: relative;
-  height: 1610px;
+  height: 1610x;
   width: 935px;
   background:#4c6b52;
   margin-left: 8px;
   left: 7em;
-  bottom: 20em;
+  bottom: 32em;
   border-radius: 8px;
   
 }
@@ -372,8 +372,8 @@ section.resume-section .resume-item .resume-date {
 .experience-image{
   position: relative;
     z-index: -1;
-    top: -22em;
-    right: 3em
+    top: -33em;
+
 }
 
 .experience-text{
@@ -385,30 +385,30 @@ section.resume-section .resume-item .resume-date {
 /*Education*/
 .education{
     position: relative;
-    left: 12sem;
+    left: 15sem;
     z-index: -1;
-    top: -65em;
+    top: -77em;
 
 }
 
 .education-text{
   position: relative;
   top: -40em;
-  left: 12em;
+  left: 6em;
 }
 
 /*Skills*/
 #skills-image{
   position: relative;
   z-index: -1;
-  bottom: 83em;
+  bottom: 95em;
   font-display: #4c6b52;
 }
 
 .skills-text{
   position:relative;
   left: 10em;
-  bottom: 125em;
+  bottom: 140em;
   /* bottom: 120em; */
 }
 
@@ -428,7 +428,7 @@ section.resume-section .resume-item .resume-date {
     left: 0px;
     top: 0px;
     z-index: -1;
-    bottom: em;
+    bottom: 100em;
 }
 
 #contact{
@@ -441,7 +441,11 @@ section.resume-section .resume-item .resume-date {
   position: absolute;
   z-index: -1;
   left: -7em;
-  bottom: 5em;
+  bottom: em;
+}
+
+#form{
+  bottom: 35em;
 }
 
 
