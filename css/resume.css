@@ -366,7 +366,6 @@ section.resume-section .resume-item .resume-date {
   }
 }
 
-
 /*Experience*/
 
 .experience-image{
@@ -412,8 +411,6 @@ section.resume-section .resume-item .resume-date {
   /* bottom: 120em; */
 }
 
-
-
 #infj{
   right: 20em;
 }
@@ -441,12 +438,13 @@ section.resume-section .resume-item .resume-date {
   position: absolute;
   z-index: -1;
   left: -7em;
-  bottom: em;
+  bottom: 25em;
 }
 
 #form{
   bottom: 35em;
 }
+
 
 
 .bg-primary {
